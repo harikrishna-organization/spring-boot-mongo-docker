@@ -36,8 +36,8 @@ services:
        
     
 volumes:
-  data:
-  driver: local
+  mongodb:
+   
     
 networks:
   default:
