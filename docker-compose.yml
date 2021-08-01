@@ -37,6 +37,7 @@ services:
     
 volumes:
   mongodb:
+   #external: true
    
     
 networks:
