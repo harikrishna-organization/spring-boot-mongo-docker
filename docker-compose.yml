@@ -13,8 +13,7 @@ services:
     working_dir: /opt/app
     depends_on:
       - mongo
-    networks:
-    - customoverlay  
+     
     deploy:  # This will be considered only in docker swarm.
       replicas: 2
       update_config:
