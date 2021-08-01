@@ -33,13 +33,13 @@ services:
     volumes:
       - mongodb:/data/db
     restart: always
-    networks:
-    - springappnetwork
+       
     
 volumes:
-  mongodb:
-    external: true
+  data:
+  driver: local
     
 networks:
-  springappnetwork:
-    external: true
+  default:
+    external:
+      name: customoverlay
